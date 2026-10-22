@@ -1,0 +1,8 @@
+services:
+  game:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "8098:80"
